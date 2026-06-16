@@ -1,0 +1,250 @@
+[
+  {
+    "id": "hydreigon-mega-absol-ex-b1",
+    "title": "Hydreigon / Mega Absol ex",
+    "energyTypes": [
+      "Darkness"
+    ],
+    "cards": [
+      {
+        "id": "B1 155",
+        "count": 2
+      },
+      {
+        "id": "B1 157",
+        "count": 2
+      },
+      {
+        "id": "B1 151",
+        "count": 1
+      },
+      {
+        "id": "B3 115",
+        "count": 1
+      },
+      {
+        "id": "B3a 047",
+        "count": 1
+      },
+      {
+        "id": "P-A 007",
+        "count": 2
+      },
+      {
+        "id": "B1 225",
+        "count": 2
+      },
+      {
+        "id": "A2 150",
+        "count": 1
+      },
+      {
+        "id": "P-A 005",
+        "count": 2
+      },
+      {
+        "id": "B2 145",
+        "count": 2
+      },
+      {
+        "id": "A3 144",
+        "count": 2
+      },
+      {
+        "id": "A2 148",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mega-blaziken-ex-b1-greninja-a1",
+    "title": "Mega Blaziken ex / Greninja",
+    "energyTypes": [
+      "Fire"
+    ],
+    "cards": [
+      {
+        "id": "B1 033",
+        "count": 2
+      },
+      {
+        "id": "B1 034",
+        "count": 1
+      },
+      {
+        "id": "B1 036",
+        "count": 1
+      },
+      {
+        "id": "A1 087",
+        "count": 1
+      },
+      {
+        "id": "A1 089",
+        "count": 1
+      },
+      {
+        "id": "B3 024",
+        "count": 1
+      },
+      {
+        "id": "B1 044",
+        "count": 1
+      },
+      {
+        "id": "P-A 007",
+        "count": 2
+      },
+      {
+        "id": "B1 225",
+        "count": 2
+      },
+      {
+        "id": "A2 150",
+        "count": 1
+      },
+      {
+        "id": "B3a 071",
+        "count": 1
+      },
+      {
+        "id": "A3 144",
+        "count": 2
+      },
+      {
+        "id": "P-A 005",
+        "count": 2
+      },
+      {
+        "id": "B1 217",
+        "count": 1
+      },
+      {
+        "id": "B2b 069",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "miraidon-ex-b3a-magnezone-b1a",
+    "title": "Miraidon ex / Magnezone",
+    "energyTypes": [
+      "Lightning"
+    ],
+    "cards": [
+      {
+        "id": "B1a 024",
+        "count": 2
+      },
+      {
+        "id": "A1 098",
+        "count": 2
+      },
+      {
+        "id": "B1a 026",
+        "count": 1
+      },
+      {
+        "id": "B3a 019",
+        "count": 2
+      },
+      {
+        "id": "A3a 021",
+        "count": 2
+      },
+      {
+        "id": "P-A 007",
+        "count": 2
+      },
+      {
+        "id": "B1 225",
+        "count": 2
+      },
+      {
+        "id": "A2 150",
+        "count": 1
+      },
+      {
+        "id": "B1 226",
+        "count": 1
+      },
+      {
+        "id": "B3a 073",
+        "count": 1
+      },
+      {
+        "id": "A1 225",
+        "count": 1
+      },
+      {
+        "id": "P-A 005",
+        "count": 2
+      },
+      {
+        "id": "A2 147",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "suicune-ex-a4a-baxcalibur-b2a",
+    "title": "Suicune ex / Baxcalibur",
+    "energyTypes": [
+      "Water"
+    ],
+    "cards": [
+      {
+        "id": "B2a 034",
+        "count": 2
+      },
+      {
+        "id": "B2a 036",
+        "count": 2
+      },
+      {
+        "id": "A4a 020",
+        "count": 2
+      },
+      {
+        "id": "B2a 037",
+        "count": 1
+      },
+      {
+        "id": "P-A 007",
+        "count": 2
+      },
+      {
+        "id": "B1 225",
+        "count": 1
+      },
+      {
+        "id": "A2b 070",
+        "count": 1
+      },
+      {
+        "id": "B3a 071",
+        "count": 1
+      },
+      {
+        "id": "P-A 005",
+        "count": 2
+      },
+      {
+        "id": "A3 144",
+        "count": 2
+      },
+      {
+        "id": "B3 147",
+        "count": 1
+      },
+      {
+        "id": "A2 147",
+        "count": 2
+      },
+      {
+        "id": "A4a 067",
+        "count": 1
+      }
+    ]
+  }
+]

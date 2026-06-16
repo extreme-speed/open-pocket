@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Open Pocket">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="card" x1="20" y1="8" x2="44" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="28" y1="14" x2="36" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffbeb"/>
+      <stop offset="1" stop-color="#fcd34d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded app tile -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <!-- back card, fanned out (the "pocket" of cards) -->
+  <rect x="14" y="13" width="30" height="42" rx="5" fill="#334155" transform="rotate(-12 29 34)"/>
+
+  <!-- front card -->
+  <rect x="19" y="10" width="30" height="42" rx="5" fill="url(#card)" stroke="#fffbeb" stroke-width="1.5" transform="rotate(6 34 31)"/>
+
+  <!-- lightning bolt energy on the card -->
+  <path d="M37 17 L26 34 H33 L30 47 L42 28 H35 Z" fill="url(#bolt)" stroke="#b45309" stroke-width="1.2" stroke-linejoin="round" transform="rotate(6 34 31)"/>
+</svg>

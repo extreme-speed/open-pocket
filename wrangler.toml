@@ -1,0 +1,6 @@
+name = "open-pocket"
+compatibility_date = "2026-06-15"
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"

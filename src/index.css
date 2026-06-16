@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+/* The app is a single fixed viewport — never let the page itself scroll. The
+   board shell owns its own internal scroll regions. */
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #020617; /* slate-950 — avoids a white flash before React mounts */
+  overscroll-behavior: none;
+}
+
+/* A sheet/modal that rises from the bottom edge (mobile board peek, log). */
+@keyframes sheetUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.sheet-up {
+  animation: sheetUp 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* A panel that fades + slides in a touch (view swaps, log rail). */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 180ms ease-out;
+}
+
+/* Board hand-off: the mat flips when the perspective player changes. */
+@keyframes flipIn {
+  from {
+    transform: perspective(1200px) rotateX(85deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(1200px) rotateX(0);
+    opacity: 1;
+  }
+}
+
+.flip-in {
+  animation: flipIn 350ms ease-out;
+  transform-origin: center;
+}
+
+/* Damage/heal cue: a number that floats up and fades over the struck Pokémon. */
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, 0) scale(0.7);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-50%, -6px) scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -30px) scale(1);
+    opacity: 0;
+  }
+}
+.float-up {
+  animation: floatUp 800ms ease-out forwards;
+}
+
+/* A brief colour flash over a Pokémon when it's damaged or healed. */
+@keyframes hitFlash {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.hit-flash {
+  animation: hitFlash 450ms ease-out forwards;
+}
+
+/* Respect users who prefer reduced motion: keep cues legible but skip movement. */
+@media (prefers-reduced-motion: reduce) {
+  .flip-in,
+  .float-up,
+  .hit-flash,
+  .sheet-up,
+  .fade-in {
+    animation-duration: 1ms;
+  }
+}

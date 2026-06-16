@@ -1,0 +1,854 @@
+{
+  "B1 155": {
+    "kind": "pokemon",
+    "id": "B1 155",
+    "set": "B1",
+    "number": 155,
+    "name": "Deino",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Deino",
+    "hp": 60,
+    "energyType": "Darkness",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Headbutt",
+        "cost": [
+          "Darkness"
+        ],
+        "damage": 20,
+        "effect": null
+      }
+    ],
+    "weakness": "Grass",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B1_155.webp"
+  },
+  "B1 157": {
+    "kind": "pokemon",
+    "id": "B1 157",
+    "set": "B1",
+    "number": 157,
+    "name": "Hydreigon",
+    "stage": 2,
+    "evolvesFrom": "Zweilous",
+    "basicName": "Deino",
+    "hp": 150,
+    "energyType": "Darkness",
+    "ability": {
+      "title": "Roar in Unison",
+      "effect": "Once during your turn, you may take 2 [D] Energy from your Energy Zone and attach it to this Pokémon. If you do, do 30 damage to this Pokémon."
+    },
+    "attacks": [
+      {
+        "title": "Hyper Ray",
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness"
+        ],
+        "damage": 130,
+        "effect": "Discard all Energy from this Pokémon."
+      }
+    ],
+    "weakness": "Grass",
+    "retreatCost": 2,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/B1_157.webp"
+  },
+  "B1 151": {
+    "kind": "pokemon",
+    "id": "B1 151",
+    "set": "B1",
+    "number": 151,
+    "name": "Mega Absol ex",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Mega Absol ex",
+    "hp": 170,
+    "energyType": "Darkness",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Darkness Claw",
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+        "damage": 80,
+        "effect": "Your opponent reveals their hand. Choose a Supporter card you find there and discard it."
+      }
+    ],
+    "weakness": "Grass",
+    "retreatCost": 1,
+    "isEx": true,
+    "isMega": true,
+    "rarity": "◊◊◊◊",
+    "image": "/cards/B1_151.webp"
+  },
+  "B3 115": {
+    "kind": "pokemon",
+    "id": "B3 115",
+    "set": "B3",
+    "number": 115,
+    "name": "Bombirdier",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Bombirdier",
+    "hp": 70,
+    "energyType": "Darkness",
+    "ability": {
+      "title": "Villainous Delivery",
+      "effect": "As long as this Pokémon is on your Bench, your Active [D] Pokémon's Retreat Cost is 1 less."
+    },
+    "attacks": [
+      {
+        "title": "Dark Cutter",
+        "cost": [
+          "Darkness"
+        ],
+        "damage": 30,
+        "effect": null
+      }
+    ],
+    "weakness": "Lightning",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/B3_115.webp"
+  },
+  "B3a 047": {
+    "kind": "pokemon",
+    "id": "B3a 047",
+    "set": "B3a",
+    "number": 47,
+    "name": "Roaring Moon",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Roaring Moon",
+    "hp": 100,
+    "energyType": "Darkness",
+    "ability": {
+      "title": "Ancient Roar",
+      "effect": "Once during your turn, when you put this Pokémon from your hand onto your Bench, you may switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+    },
+    "attacks": [
+      {
+        "title": "Wind of Darkness",
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Colorless"
+        ],
+        "damage": 70,
+        "effect": null
+      }
+    ],
+    "weakness": "Grass",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/B3a_47.webp"
+  },
+  "P-A 007": {
+    "kind": "trainer",
+    "id": "P-A 007",
+    "set": "P-A",
+    "number": 7,
+    "name": "Professor's Research",
+    "trainerType": "Supporter",
+    "effect": "Draw 2 cards.",
+    "rarity": "◊",
+    "image": "/cards/P-A_7.webp"
+  },
+  "B1 225": {
+    "kind": "trainer",
+    "id": "B1 225",
+    "set": "B1",
+    "number": 225,
+    "name": "Copycat",
+    "trainerType": "Supporter",
+    "effect": "Shuffle your hand into your deck. Draw a card for each card in your opponent's hand.",
+    "rarity": "◊◊",
+    "image": "/cards/B1_225.webp"
+  },
+  "A2 150": {
+    "kind": "trainer",
+    "id": "A2 150",
+    "set": "A2",
+    "number": 150,
+    "name": "Cyrus",
+    "trainerType": "Supporter",
+    "effect": "Switch in 1 of your opponent's Benched Pokémon that has damage on it to the Active Spot.",
+    "rarity": "◊◊",
+    "image": "/cards/A2_150.webp"
+  },
+  "P-A 005": {
+    "kind": "trainer",
+    "id": "P-A 005",
+    "set": "P-A",
+    "number": 5,
+    "name": "Poké Ball",
+    "trainerType": "Item",
+    "effect": "Put a random Basic Pokémon from your deck into your hand.",
+    "rarity": "◊",
+    "image": "/cards/P-A_5.webp"
+  },
+  "B2 145": {
+    "kind": "trainer",
+    "id": "B2 145",
+    "set": "B2",
+    "number": 145,
+    "name": "Lucky Ice Pop",
+    "trainerType": "Item",
+    "effect": "Heal 20 damage from your Active Pokémon. If you healed any damage in this way, flip a coin. If heads, put this Lucky Ice Pop into your hand instead of the discard pile.",
+    "rarity": "◊◊",
+    "image": "/cards/B2_145.webp"
+  },
+  "A3 144": {
+    "kind": "trainer",
+    "id": "A3 144",
+    "set": "A3",
+    "number": 144,
+    "name": "Rare Candy",
+    "trainerType": "Item",
+    "effect": "Choose 1 of your Basic Pokémon in play. If you have a Stage 2 card in your hand that evolves from that Pokémon, put that card onto the Basic Pokémon to evolve it, skipping the Stage 1. You can't use this card during your first turn or on a Basic Pokémon that was put into play this turn.",
+    "rarity": "◊◊",
+    "image": "/cards/A3_144.webp"
+  },
+  "A2 148": {
+    "kind": "trainer",
+    "id": "A2 148",
+    "set": "A2",
+    "number": 148,
+    "name": "Rocky Helmet",
+    "trainerType": "Tool",
+    "effect": "If the Pokémon this card is attached to is in the Active Spot and is damaged by an attack from your opponent's Pokémon, do 20 damage to the Attacking Pokémon.",
+    "rarity": "◊◊",
+    "image": "/cards/A2_148.webp"
+  },
+  "B1 033": {
+    "kind": "pokemon",
+    "id": "B1 033",
+    "set": "B1",
+    "number": 33,
+    "name": "Torchic",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Torchic",
+    "hp": 60,
+    "energyType": "Fire",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Peck",
+        "cost": [
+          "Fire"
+        ],
+        "damage": 20,
+        "effect": null
+      }
+    ],
+    "weakness": "Water",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B1_33.webp"
+  },
+  "B1 034": {
+    "kind": "pokemon",
+    "id": "B1 034",
+    "set": "B1",
+    "number": 34,
+    "name": "Combusken",
+    "stage": 1,
+    "evolvesFrom": "Torchic",
+    "basicName": "Torchic",
+    "hp": 80,
+    "energyType": "Fire",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "High Jump Kick",
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+        "damage": 50,
+        "effect": null
+      }
+    ],
+    "weakness": "Water",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊",
+    "image": "/cards/B1_34.webp"
+  },
+  "B1 036": {
+    "kind": "pokemon",
+    "id": "B1 036",
+    "set": "B1",
+    "number": 36,
+    "name": "Mega Blaziken ex",
+    "stage": 2,
+    "evolvesFrom": "Combusken",
+    "basicName": "Torchic",
+    "hp": 210,
+    "energyType": "Fire",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Mega Burning",
+        "cost": [
+          "Fire",
+          "Fire"
+        ],
+        "damage": 120,
+        "effect": "Discard Fire[R] Energy from this Pokémon. Your opponent's Active Pokémon is now Burned."
+      }
+    ],
+    "weakness": "Water",
+    "retreatCost": 1,
+    "isEx": true,
+    "isMega": true,
+    "rarity": "◊◊◊◊",
+    "image": "/cards/B1_36.webp"
+  },
+  "A1 087": {
+    "kind": "pokemon",
+    "id": "A1 087",
+    "set": "A1",
+    "number": 87,
+    "name": "Froakie",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Froakie",
+    "hp": 60,
+    "energyType": "Water",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Flop",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": 10,
+        "effect": null
+      }
+    ],
+    "weakness": "Lightning",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/A1_87.webp"
+  },
+  "A1 089": {
+    "kind": "pokemon",
+    "id": "A1 089",
+    "set": "A1",
+    "number": 89,
+    "name": "Greninja",
+    "stage": 2,
+    "evolvesFrom": "Frogadier",
+    "basicName": "Froakie",
+    "hp": 120,
+    "energyType": "Water",
+    "ability": {
+      "title": "Water Shuriken",
+      "effect": "Once during your turn, you may do 20 damage to 1 of your opponent's Pokémon."
+    },
+    "attacks": [
+      {
+        "title": "Mist Slash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": 60,
+        "effect": null
+      }
+    ],
+    "weakness": "Lightning",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/A1_89.webp"
+  },
+  "B3 024": {
+    "kind": "pokemon",
+    "id": "B3 024",
+    "set": "B3",
+    "number": 24,
+    "name": "Castform Sunny Form",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Castform Sunny Form",
+    "hp": 70,
+    "energyType": "Fire",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Sunny Scorching",
+        "cost": [
+          "Fire"
+        ],
+        "damage": 30,
+        "effect": "If a Stadium is in play, your opponent's Active Pokémon is now Burned."
+      }
+    ],
+    "weakness": "Water",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B3_24.webp"
+  },
+  "B1 044": {
+    "kind": "pokemon",
+    "id": "B1 044",
+    "set": "B1",
+    "number": 44,
+    "name": "Heatmor",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Heatmor",
+    "hp": 80,
+    "energyType": "Fire",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Tongue Whip",
+        "cost": [
+          "Fire"
+        ],
+        "damage": 0,
+        "effect": "This attack does 30 damage to 1 of your opponent's Benched Pokémon."
+      }
+    ],
+    "weakness": "Water",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B1_44.webp"
+  },
+  "B3a 071": {
+    "kind": "trainer",
+    "id": "B3a 071",
+    "set": "B3a",
+    "number": 71,
+    "name": "Juliana",
+    "trainerType": "Supporter",
+    "effect": "Put a random Stage 2 Pokémon from your deck into your hand.",
+    "rarity": "◊◊",
+    "image": "/cards/B3a_71.webp"
+  },
+  "B1 217": {
+    "kind": "trainer",
+    "id": "B1 217",
+    "set": "B1",
+    "number": 217,
+    "name": "Flame Patch",
+    "trainerType": "Item",
+    "effect": "Attach a [R] Energy from your discard pile to your Active [R] Pokémon.",
+    "rarity": "◊◊",
+    "image": "/cards/B1_217.webp"
+  },
+  "B2b 069": {
+    "kind": "trainer",
+    "id": "B2b 069",
+    "set": "B2b",
+    "number": 69,
+    "name": "Hiking Trail",
+    "trainerType": "Stadium",
+    "effect": "At the end of each player's turn, that player draws cards until they have 3 cards in their hand.",
+    "rarity": "◊◊",
+    "image": "/cards/B2b_69.webp"
+  },
+  "B1a 024": {
+    "kind": "pokemon",
+    "id": "B1a 024",
+    "set": "B1a",
+    "number": 24,
+    "name": "Magnemite",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Magnemite",
+    "hp": 50,
+    "energyType": "Lightning",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Electro Ball",
+        "cost": [
+          "Lightning"
+        ],
+        "damage": 30,
+        "effect": null
+      }
+    ],
+    "weakness": "Fighting",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B1a_24.webp"
+  },
+  "A1 098": {
+    "kind": "pokemon",
+    "id": "A1 098",
+    "set": "A1",
+    "number": 98,
+    "name": "Magneton",
+    "stage": 1,
+    "evolvesFrom": "Magnemite",
+    "basicName": "Magnemite",
+    "hp": 80,
+    "energyType": "Lightning",
+    "ability": {
+      "title": "Volt Charge",
+      "effect": "Once during your turn, you may take a [L] Energy from your Energy Zone and attach it to this Pokémon."
+    },
+    "attacks": [
+      {
+        "title": "Spinning Attack",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": 60,
+        "effect": null
+      }
+    ],
+    "weakness": "Fighting",
+    "retreatCost": 2,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/A1_98.webp"
+  },
+  "B1a 026": {
+    "kind": "pokemon",
+    "id": "B1a 026",
+    "set": "B1a",
+    "number": 26,
+    "name": "Magnezone",
+    "stage": 2,
+    "evolvesFrom": "Magneton",
+    "basicName": "Magnemite",
+    "hp": 150,
+    "energyType": "Lightning",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Mirror Shot",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": 90,
+        "effect": "During your opponent's next turn, if the Defending Pokémon tries to use an attack, your opponent flips a coin. If tails, that attack doesn't happen."
+      }
+    ],
+    "weakness": "Fighting",
+    "retreatCost": 2,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/B1a_26.webp"
+  },
+  "B3a 019": {
+    "kind": "pokemon",
+    "id": "B3a 019",
+    "set": "B3a",
+    "number": 19,
+    "name": "Miraidon ex",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Miraidon ex",
+    "hp": 140,
+    "energyType": "Lightning",
+    "ability": {
+      "title": "Legendary Drive",
+      "effect": "Once during your turn, when you put this Pokémon from your hand onto your Bench, you may switch it with your Active Pokémon. If you do, move all of your Energy in play to this Pokémon."
+    },
+    "attacks": [
+      {
+        "title": "Hadron Ray",
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": 20,
+        "effect": "This attack does 20 more damage for each [L] Energy attached to this Pokémon."
+      }
+    ],
+    "weakness": "Fighting",
+    "retreatCost": 2,
+    "isEx": true,
+    "isMega": false,
+    "rarity": "◊◊◊◊",
+    "image": "/cards/B3a_19.webp"
+  },
+  "A3a 021": {
+    "kind": "pokemon",
+    "id": "A3a 021",
+    "set": "A3a",
+    "number": 21,
+    "name": "Zeraora",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Zeraora",
+    "hp": 90,
+    "energyType": "Lightning",
+    "ability": {
+      "title": "Thunderclap Flash",
+      "effect": "At the end of your first turn, take a [L] Energy from your Energy Zone and attach it to this Pokémon."
+    },
+    "attacks": [
+      {
+        "title": "Lightning Claw",
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+        "damage": 50,
+        "effect": null
+      }
+    ],
+    "weakness": "Fighting",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/A3a_21.webp"
+  },
+  "B1 226": {
+    "kind": "trainer",
+    "id": "B1 226",
+    "set": "B1",
+    "number": 226,
+    "name": "Lisia",
+    "trainerType": "Supporter",
+    "effect": "Put 2 random Basic Pokémon with 50 HP or less from your deck into your hand.",
+    "rarity": "◊◊",
+    "image": "/cards/B1_226.webp"
+  },
+  "B3a 073": {
+    "kind": "trainer",
+    "id": "B3a 073",
+    "set": "B3a",
+    "number": 73,
+    "name": "Professor Turo",
+    "trainerType": "Supporter",
+    "effect": "Shuffle 1 of your Future Pokémon in play into your deck.",
+    "rarity": "◊◊",
+    "image": "/cards/B3a_73.webp"
+  },
+  "A1 225": {
+    "kind": "trainer",
+    "id": "A1 225",
+    "set": "A1",
+    "number": 225,
+    "name": "Sabrina",
+    "trainerType": "Supporter",
+    "effect": "Switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)",
+    "rarity": "◊◊",
+    "image": "/cards/A1_225.webp"
+  },
+  "A2 147": {
+    "kind": "trainer",
+    "id": "A2 147",
+    "set": "A2",
+    "number": 147,
+    "name": "Giant Cape",
+    "trainerType": "Tool",
+    "effect": "The Pokémon this card is attached to gets +20 HP.",
+    "rarity": "◊◊",
+    "image": "/cards/A2_147.webp"
+  },
+  "B2a 034": {
+    "kind": "pokemon",
+    "id": "B2a 034",
+    "set": "B2a",
+    "number": 34,
+    "name": "Frigibax",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Frigibax",
+    "hp": 60,
+    "energyType": "Water",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Chilly",
+        "cost": [
+          "Water"
+        ],
+        "damage": 20,
+        "effect": null
+      }
+    ],
+    "weakness": "Metal",
+    "retreatCost": 1,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊",
+    "image": "/cards/B2a_34.webp"
+  },
+  "B2a 036": {
+    "kind": "pokemon",
+    "id": "B2a 036",
+    "set": "B2a",
+    "number": 36,
+    "name": "Baxcalibur",
+    "stage": 2,
+    "evolvesFrom": "Arctibax",
+    "basicName": "Frigibax",
+    "hp": 140,
+    "energyType": "Water",
+    "ability": {
+      "title": "Ice Maker",
+      "effect": "Once during your turn, you may take a [W] Energy from your Energy Zone and attach it to the [W] Pokémon in the Active Spot."
+    },
+    "attacks": [
+      {
+        "title": "Buster Tail",
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+        "damage": 90,
+        "effect": null
+      }
+    ],
+    "weakness": "Metal",
+    "retreatCost": 3,
+    "isEx": false,
+    "isMega": false,
+    "rarity": "◊◊◊",
+    "image": "/cards/B2a_36.webp"
+  },
+  "A4a 020": {
+    "kind": "pokemon",
+    "id": "A4a 020",
+    "set": "A4a",
+    "number": 20,
+    "name": "Suicune ex",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Suicune ex",
+    "hp": 140,
+    "energyType": "Water",
+    "ability": {
+      "title": "Legendary Pulse",
+      "effect": "At the end of your turn, if this Pokémon is in the Active Spot, draw a card."
+    },
+    "attacks": [
+      {
+        "title": "Crystal Waltz",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "damage": 20,
+        "effect": "This attack does 20 damage for each Benched Pokémon (both yours and your opponent's)."
+      }
+    ],
+    "weakness": "Lightning",
+    "retreatCost": 2,
+    "isEx": true,
+    "isMega": false,
+    "rarity": "◊◊◊◊",
+    "image": "/cards/A4a_20.webp"
+  },
+  "B2a 037": {
+    "kind": "pokemon",
+    "id": "B2a 037",
+    "set": "B2a",
+    "number": 37,
+    "name": "Chien-Pao ex",
+    "stage": 0,
+    "evolvesFrom": null,
+    "basicName": "Chien-Pao ex",
+    "hp": 130,
+    "energyType": "Water",
+    "ability": null,
+    "attacks": [
+      {
+        "title": "Icicle",
+        "cost": [
+          "Water"
+        ],
+        "damage": 20,
+        "effect": null
+      },
+      {
+        "title": "Diving Icicles",
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+        "damage": 0,
+        "effect": "Discard all [W] Energy from this Pokémon. This attack does 130 damage to 1 of your opponent's Pokémon."
+      }
+    ],
+    "weakness": "Metal",
+    "retreatCost": 1,
+    "isEx": true,
+    "isMega": false,
+    "rarity": "◊◊◊◊",
+    "image": "/cards/B2a_37.webp"
+  },
+  "A2b 070": {
+    "kind": "trainer",
+    "id": "A2b 070",
+    "set": "A2b",
+    "number": 70,
+    "name": "Pokémon Center Lady",
+    "trainerType": "Supporter",
+    "effect": "Heal 30 damage from 1 of your Pokémon, and it recovers from all Special Conditions.",
+    "rarity": "◊◊",
+    "image": "/cards/A2b_70.webp"
+  },
+  "B3 147": {
+    "kind": "trainer",
+    "id": "B3 147",
+    "set": "B3",
+    "number": 147,
+    "name": "Field Blower",
+    "trainerType": "Item",
+    "effect": "Discard a Pokémon Tool card from a Pokémon (yours or your opponent's), or discard a Stadium card in play.",
+    "rarity": "◊◊",
+    "image": "/cards/B3_147.webp"
+  },
+  "A4a 067": {
+    "kind": "trainer",
+    "id": "A4a 067",
+    "set": "A4a",
+    "number": 67,
+    "name": "Inflatable Boat",
+    "trainerType": "Tool",
+    "effect": "The Retreat Cost of the [W] Pokémon this card is attached to is 1 less.",
+    "rarity": "◊◊",
+    "image": "/cards/A4a_67.webp"
+  }
+}
