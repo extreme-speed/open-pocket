@@ -75,7 +75,7 @@ function newNode(): TreeNode {
  *  score the resulting leaf with the value function (1/0 if it actually ended). */
 function rollout(state: GameState, seat: PlayerIndex, policy: Policy, rng: RngState, depth: number): number {
   let s = state
-  for (let d = 0; d < depth && s.winner === null; d++) {
+  for (let d = 0; d < depth && s.phase !== 'gameOver'; d++) {
     const moves = legalMoves(s)
     if (moves.length === 0) break
     s = apply(s, policy(s, moves, rng)).state
@@ -133,7 +133,7 @@ export function search(rootState: GameState, seat: PlayerIndex, opts: SearchOpti
 
     // Selection + single expansion.
     for (;;) {
-      if (world.winner !== null) break
+      if (world.phase === 'gameOver') break
       const legal = legalMoves(world)
       if (legal.length === 0) break
 

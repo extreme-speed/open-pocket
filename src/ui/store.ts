@@ -110,7 +110,7 @@ function describe(e: GameEvent, state: GameState): string | null {
     case 'turnStart':
       return `— Turn ${e.turn}: Player ${e.player + 1} —`
     case 'gameOver':
-      return `Game over — Player ${e.winner + 1} wins!`
+      return e.winner === null ? 'Game over — draw (turn limit)' : `Game over — Player ${e.winner + 1} wins!`
     case 'info':
       return e.message
     default:

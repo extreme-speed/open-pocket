@@ -286,7 +286,7 @@ export default function Replay() {
 
         <div className="pointer-events-none text-[11px] text-slate-400">
           {recorded.matchup.replace('__vs__', '  vs  ')} · seed {recorded.seed} ·{' '}
-          {recorded.winner === null ? 'unfinished' : `Player ${recorded.winner + 1} wins`}
+          {recorded.winner === null ? 'draw (turn limit)' : `Player ${recorded.winner + 1} wins`}
         </div>
       </div>
     </div>

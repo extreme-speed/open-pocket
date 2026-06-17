@@ -4,6 +4,3 @@ coverage
 *.local
 .DS_Store
 .vite
-
-# Recorded self-play games (overnight output; replayed locally via the UI).
-games/

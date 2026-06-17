@@ -233,6 +233,6 @@ export type GameEvent =
   | { type: 'energyAttached'; uid: string; energy: EnergyType }
   | { type: 'points'; player: PlayerIndex; total: number }
   | { type: 'turnStart'; player: PlayerIndex; turn: number }
-  | { type: 'gameOver'; winner: PlayerIndex }
+  | { type: 'gameOver'; winner: PlayerIndex | null }
   | { type: 'flip'; result: boolean; reason?: string }
   | { type: 'info'; message: string }

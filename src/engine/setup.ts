@@ -10,6 +10,9 @@ import type { Card, GameState, PlayerIndex, PlayerState, PokemonCard } from './t
 export const OPENING_HAND_SIZE = 5
 export const MAX_BENCH = 3
 export const POINTS_TO_WIN = 3
+/** Hard turn cap: the game ends in a draw once 30 turns (15 per player) have
+ *  been played, so a stalled board can't loop forever. */
+export const TURN_LIMIT = 30
 
 export function isBasic(card: Card): card is PokemonCard {
   return card.kind === 'pokemon' && card.stage === 0

@@ -97,7 +97,10 @@ function playerScore(state: GameState, idx: PlayerIndex): number {
 /** Raw positional score from `seat`'s perspective (mine − theirs). A decisive
  *  result short-circuits to a large ± value. */
 export function evaluate(state: GameState, seat: PlayerIndex): number {
-  if (state.winner !== null) return state.winner === seat ? 1e6 : -1e6
+  if (state.phase === 'gameOver') {
+    if (state.winner === null) return 0 // draw (turn cap)
+    return state.winner === seat ? 1e6 : -1e6
+  }
   // Zero-sum: my standing minus the opponent's (their spent resources are folded
   // into their own lower score via the discard penalty).
   return playerScore(state, seat) - playerScore(state, other(seat))
@@ -106,7 +109,10 @@ export function evaluate(state: GameState, seat: PlayerIndex): number {
 /** Logistic squash of the score into a win probability in (0, 1) for `seat`.
  *  Terminal states return exactly 1 or 0. */
 export function winProb(state: GameState, seat: PlayerIndex): number {
-  if (state.winner !== null) return state.winner === seat ? 1 : 0
+  if (state.phase === 'gameOver') {
+    if (state.winner === null) return 0.5 // draw counts as neither win nor loss
+    return state.winner === seat ? 1 : 0
+  }
   const diff = evaluate(state, seat)
   // Scale chosen so a ~one-point swing (≈100) maps to a clearly-favored ~0.65.
   return 1 / (1 + Math.exp(-diff / 160))

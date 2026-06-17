@@ -8,7 +8,7 @@ import { getCard } from './data/cards'
 import { HIKING_TRAIL, ROCKY_HELMET } from './data/ids'
 import { pickRandom } from './rng'
 import { inPlay, isKnockedOut, other, pointsFor, pokemonCard, retreatCost } from './rules'
-import { POINTS_TO_WIN } from './setup'
+import { POINTS_TO_WIN, TURN_LIMIT } from './setup'
 import { makeContext } from './effects/context'
 import {
   activatedAbilities,
@@ -460,6 +460,13 @@ function setWinner(s: GameState, events: GameEvent[], winner: PlayerIndex): void
   events.push({ type: 'gameOver', winner })
 }
 
+/** End the game in a draw (no winner) — reached when the turn cap is hit. */
+function endInDraw(s: GameState, events: GameEvent[]): void {
+  s.winner = null
+  s.phase = 'gameOver'
+  events.push({ type: 'gameOver', winner: null })
+}
+
 function resolveKOs(s: GameState, events: GameEvent[]): void {
   for (const owner of [0, 1] as PlayerIndex[]) {
     const p = s.players[owner]
@@ -576,6 +583,13 @@ function runCheckup(s: GameState, events: GameEvent[]): void {
 }
 
 function beginTurn(s: GameState, events: GameEvent[], player: PlayerIndex, turn: number): void {
+  // Turn cap: once 30 turns have been played, the game is a draw rather than
+  // starting a 31st. Checked here so every path that begins a turn is covered.
+  if (turn > TURN_LIMIT) {
+    endInDraw(s, events)
+    return
+  }
+
   s.current = player
   s.turn = turn
   s.phase = 'main'

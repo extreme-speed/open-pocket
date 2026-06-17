@@ -33,14 +33,17 @@ function Overlay({ labelledBy, children }: { labelledBy: string; children: React
 export default function DecisionModal() {
   const state = useGame((s) => s.state!)
 
-  if (state.phase === 'gameOver' && state.winner !== null) {
+  if (state.phase === 'gameOver') {
+    const draw = state.winner === null
     return (
       <Overlay labelledBy="dialog-gameover">
         <h2 id="dialog-gameover" className="text-2xl font-bold">
-          Player {state.winner + 1} wins! 🏆
+          {draw ? 'Draw! 🤝' : `Player ${state.winner! + 1} wins! 🏆`}
         </h2>
         <p className="mt-1 text-sm text-slate-300">
-          {state.players[state.winner].points} points scored.
+          {draw
+            ? `Turn limit reached (${state.players[0].points}–${state.players[1].points}).`
+            : `${state.players[state.winner!].points} points scored.`}
         </p>
         <Link
           to="/"
