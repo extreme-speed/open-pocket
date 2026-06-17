@@ -89,11 +89,15 @@ function main(): void {
 
   for (let g = 0; g < args.games; g++) {
     const seed = args.baseSeed + g
-    const firstPlayer: PlayerIndex = (g % 2) as PlayerIndex // alternate the start to balance
+    // First player is a function of the seed (not the game index), so a game is
+    // reproducible whether run in this batch or as a standalone seed, and the set
+    // stays balanced. Even seeds: P1 starts; odd seeds: P2 starts.
+    const firstPlayer: PlayerIndex = (seed % 2) as PlayerIndex
     const t0 = Date.now()
     const recorded = playGame(args, seed, firstPlayer)
 
-    const file = join(outDir, `${seed}.json`)
+    // Zero-padded so files sort naturally (00.json, 01.json, … 19.json).
+    const file = join(outDir, `${String(seed).padStart(2, '0')}.json`)
     writeFileSync(file, JSON.stringify(recorded))
 
     if (recorded.winner !== null) {
@@ -101,7 +105,7 @@ function main(): void {
       if (recorded.winner === 0) aWins++
     }
     const secs = ((Date.now() - t0) / 1000).toFixed(1)
-    const result = recorded.winner === null ? 'draw/stall' : `P${recorded.winner + 1} wins`
+    const result = recorded.winner === null ? 'draw (turn limit)' : `P${recorded.winner + 1} wins`
     console.log(
       `  [${g + 1}/${args.games}] seed ${seed} → ${result}` +
         ` (${recorded.decisions.length} decisions, ${secs}s) → ${file}`,
