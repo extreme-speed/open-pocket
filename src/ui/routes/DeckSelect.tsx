@@ -117,6 +117,14 @@ export default function DeckSelect() {
       >
         {hasGame ? 'Start new battle' : 'Start battle'}
       </button>
+
+      <button
+        type="button"
+        onClick={() => navigate('/replay')}
+        className="text-sm text-slate-400 underline-offset-2 hover:text-slate-200 hover:underline"
+      >
+        Watch an AI replay →
+      </button>
     </main>
   )
 }

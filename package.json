@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "data:cards": "node scripts/build-card-db.ts",
     "data:images": "node scripts/fetch-images.ts",
-    "data": "npm run data:cards && npm run data:images"
+    "data": "npm run data:cards && npm run data:images",
+    "selfplay": "node --experimental-strip-types --import ./scripts/register.mjs scripts/selfplay.ts"
   },
   "dependencies": {
     "react": "^19.2.7",
